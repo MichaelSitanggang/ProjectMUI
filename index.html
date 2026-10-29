@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKEUP WITME | Makeup Artist </title>
-   
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -42,36 +45,45 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(232, 197, 200, 0.3);
         }
+
         .hero-bg {
-            background-image: linear-gradient(to right, rgba(34, 31, 32, 0.75), rgba(34, 31, 32, 0.3)), url('https://web.whatsapp.com/605d7dfa-ac47-451d-bbde-4142319bc525');
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('./assets/gambar1.jpeg');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
+
 <body class="font-sans bg-brand-nude text-brand-charcoal antialiased overflow-x-hidden">
 
-    
+
     <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-card shadow-sm" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                
+
                 <a href="#" class="flex items-center gap-2 group">
-                    <span class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center font-serif text-xl font-bold shadow-md group-hover:scale-105 transition-transform">WM</span>
+                    <span
+                        class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center font-serif text-xl font-bold shadow-md group-hover:scale-105 transition-transform">WM</span>
                     <div>
-                        <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-brand-dark block leading-none">MAKEUP WITME</span>
-                        <span class="text-[10px] tracking-[0.25em] text-brand-gold uppercase block mt-1">Makeup Artist</span>
+                        <span
+                            class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-brand-dark block leading-none">MAKEUP
+                            WITME</span>
+                        <span class="text-[10px] tracking-[0.25em] text-brand-gold uppercase block mt-1">Makeup
+                            Artist</span>
                     </div>
                 </a>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide text-brand-charcoal">
+                <div
+                    class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide text-brand-charcoal">
                     <a href="#about" class="hover:text-brand-rosegold transition-colors">Tentang Saya</a>
                     <a href="#services" class="hover:text-brand-rosegold transition-colors">Layanan</a>
                     <a href="#gallery" class="hover:text-brand-rosegold transition-colors">Portofolio</a>
                     <a href="#calculator" class="hover:text-brand-rosegold transition-colors">Estimasi Harga</a>
                     <a href="#testimonials" class="hover:text-brand-rosegold transition-colors">Testimonial</a>
-                    <a href="#booking" class="bg-brand-rosegold hover:bg-brand-gold text-white px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300">
+                    <a href="#booking"
+                        class="bg-brand-rosegold hover:bg-brand-gold text-white px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300">
                         <i class="fa-brands fa-whatsapp mr-2"></i>Reservasi
                     </a>
                 </div>
@@ -86,13 +98,22 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-nude border-b border-brand-rose px-4 pt-2 pb-6 space-y-3 shadow-lg">
-            <a href="#about" class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Tentang Saya</a>
-            <a href="#services" class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Layanan</a>
-            <a href="#gallery" class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Portofolio</a>
-            <a href="#calculator" class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Estimasi Harga</a>
-            <a href="#testimonials" class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Testimonial</a>
-            <a href="#booking" class="inline-block mt-2 w-full text-center bg-brand-rosegold text-white py-3 rounded-full font-medium">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-brand-nude border-b border-brand-rose px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#about"
+                class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Tentang
+                Saya</a>
+            <a href="#services"
+                class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Layanan</a>
+            <a href="#gallery"
+                class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Portofolio</a>
+            <a href="#calculator"
+                class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Estimasi
+                Harga</a>
+            <a href="#testimonials"
+                class="block py-2 text-brand-charcoal hover:text-brand-rosegold border-b border-gray-100">Testimonial</a>
+            <a href="#booking"
+                class="inline-block mt-2 w-full text-center bg-brand-rosegold text-white py-3 rounded-full font-medium">
                 <i class="fa-brands fa-whatsapp mr-2"></i>Reservasi Sekarang
             </a>
         </div>
@@ -102,20 +123,25 @@
     <section class="relative min-h-screen hero-bg flex items-center justify-start pt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
             <div class="max-w-2xl text-white space-y-6">
-                <span class="inline-block px-4 py-1.5 rounded-full bg-brand-gold/30 border border-brand-gold text-brand-rose text-xs sm:text-sm font-semibold tracking-widest uppercase backdrop-blur-md">
+                <span
+                    class="inline-block px-4 py-1.5 rounded-full bg-brand-gold/30 border border-brand-gold text-brand-rose text-xs sm:text-sm font-semibold tracking-widest uppercase backdrop-blur-md">
                     Makeup Artist
                 </span>
                 <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-                    Enhancing Your <span class="italic text-brand-rose font-normal">Natural Beauty</span> For Every Special Moment
+                    Enhancing Your <span class="italic text-brand-rose font-normal">Natural Beauty</span> For Every
+                    Special Moment
                 </h1>
                 <p class="text-base sm:text-lg text-gray-200 font-light leading-relaxed">
-                    Mewujudkan tampilan impian Anda dengan sentuhan elegan, tahan lama, dan menonjolkan karakter pesona terbaik Anda di hari istimewa.
+                    Mewujudkan tampilan impian Anda dengan sentuhan elegan, tahan lama, dan menonjolkan karakter pesona
+                    terbaik Anda di hari istimewa.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="#booking" class="bg-brand-rosegold hover:bg-brand-gold text-white font-medium px-8 py-4 rounded-full text-center transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                    <a href="#booking"
+                        class="bg-brand-rosegold hover:bg-brand-gold text-white font-medium px-8 py-4 rounded-full text-center transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                         <i class="fa-regular fa-calendar-check mr-2"></i>Booking Sekarang
                     </a>
-                    <a href="#gallery" class="bg-white/10 hover:bg-white/20 text-white border border-white/40 font-medium px-8 py-4 rounded-full text-center backdrop-blur-sm transition-all duration-300">
+                    <a href="#gallery"
+                        class="bg-white/10 hover:bg-white/20 text-white border border-white/40 font-medium px-8 py-4 rounded-full text-center backdrop-blur-sm transition-all duration-300">
                         Lihat Portofolio
                     </a>
                 </div>
@@ -130,26 +156,32 @@
     <section id="about" class="py-20 sm:py-28 bg-brand-cream/50 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                
+
                 <!-- MUA Photo Card -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" alt="Winda Intan MUA Profile" class="w-full h-[450px] sm:h-[520px] object-cover">
+                        <img src="./assets/gambar2.jpeg" alt="Winda Intan MUA Profile"
+                            class="w-full h-[450px] sm:h-[520px] object-cover">
                     </div>
                     <!-- Decorative Frame -->
-                    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-brand-rosegold rounded-2xl -z-0 hidden sm:block"></div>
-                    
+                    <div
+                        class="absolute -bottom-6 -right-6 w-full h-full border-2 border-brand-rosegold rounded-2xl -z-0 hidden sm:block">
+                    </div>
+
                     <!-- Experience Badge -->
-                    <div class="absolute -top-6 -left-6 z-20 bg-white p-4 sm:p-6 rounded-2xl shadow-xl border border-brand-rose text-center">
+                    <div
+                        class="absolute -top-6 -left-6 z-20 bg-white p-4 sm:p-6 rounded-2xl shadow-xl border border-brand-rose text-center">
                         <span class="block font-serif text-3xl sm:text-4xl font-bold text-brand-gold">7+</span>
-                        <span class="text-xs font-semibold text-brand-charcoal uppercase tracking-wider">Tahun Pengalaman</span>
+                        <span class="text-xs font-semibold text-brand-charcoal uppercase tracking-wider">Tahun
+                            Pengalaman</span>
                     </div>
                 </div>
 
                 <!-- MUA Text Content -->
                 <div class="lg:col-span-7 space-y-6">
                     <div>
-                        <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Tentang Makeup Artist</span>
+                        <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Tentang Makeup
+                            Artist</span>
                         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-dark mt-1">
                             Winda Intan
                         </h2>
@@ -157,11 +189,15 @@
                     </div>
 
                     <p class="text-brand-charcoal leading-relaxed font-light text-base sm:text-lg">
-                        Halo! Saya Winda, MUA profesional yang telah berkarier sejak tahun 2017. Filosofi riasan saya adalah <span class="font-semibold text-brand-dark">"Empowered Beauty"</span>—bukan mengubah wajah Anda menjadi orang lain, melainkan menonjolkan fitur alami terbaik agar Anda tampil percaya diri dan memukau.
+                        Halo! Saya Winda, MUA profesional yang telah berkarier sejak tahun 2017. Filosofi riasan saya
+                        adalah <span class="font-semibold text-brand-dark">"Empowered Beauty"</span>—bukan mengubah
+                        wajah Anda menjadi orang lain, melainkan menonjolkan fitur alami terbaik agar Anda tampil
+                        percaya diri dan memukau.
                     </p>
 
                     <p class="text-brand-charcoal leading-relaxed font-light">
-                        Berbekal sertifikasi nasional dan pengalaman merias ratusan pengantin (Bridal), hingga wisudawan, saya menjamin kualitas produk premium yang aman, higienis, dan tahan hingga 16 jam.
+                        Berbekal sertifikasi nasional dan pengalaman merias ratusan pengantin (Bridal), hingga
+                        wisudawan, saya menjamin kualitas produk premium yang aman, higienis, dan tahan hingga 16 jam.
                     </p>
 
                     <!-- Certifications & Highlights -->
@@ -176,7 +212,8 @@
                             <h4 class="font-semibold text-xs text-brand-dark uppercase">High-End Product</h4>
                             <p class="text-[11px] text-gray-500 mt-0.5">Dior, Charlotte Tilbury, MAC</p>
                         </div>
-                        <div class="bg-white p-4 rounded-xl border border-brand-rose/40 text-center shadow-sm col-span-2 sm:col-span-1">
+                        <div
+                            class="bg-white p-4 rounded-xl border border-brand-rose/40 text-center shadow-sm col-span-2 sm:col-span-1">
                             <i class="fa-solid fa-heart text-brand-gold text-2xl mb-2"></i>
                             <h4 class="font-semibold text-xs text-brand-dark uppercase">500+ Clients</h4>
                             <p class="text-[11px] text-gray-500 mt-0.5">Puas & Terlayani</p>
@@ -195,142 +232,196 @@
                 <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Layanan Kami</span>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-dark mt-2">Pilihan Paket Riasan</h2>
                 <div class="w-16 h-1 bg-brand-rosegold mx-auto mt-4 rounded-full"></div>
-                <p class="text-gray-600 mt-4 text-sm sm:text-base">Setiap paket dirancang menggunakan produk luxury dan teknik profesional agar hasil riasan sempurna sepanjang hari.</p>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">Setiap paket dirancang menggunakan produk luxury dan
+                    teknik profesional agar hasil riasan sempurna sepanjang hari.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+
                 <!-- Service 1 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Makeup Pengantin" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                            <span class="absolute top-4 right-4 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="./assets/gambar3.jpeg" alt="Makeup Pengantin"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            <span
+                                class="absolute top-4 right-4 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most
+                                Popular</span>
                         </div>
                         <div class="p-6">
                             <h3 class="font-serif text-2xl font-bold text-brand-dark">Makeup Pengantin</h3>
                             <p class="text-brand-rosegold font-semibold mt-1">Mulai Rp 2.500.000</p>
-                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Riasan pengantin istimewa untuk Akad/Pemberkatan & Resepsi. Tahan hingga 16+ jam, bebas crack, dengan teknik flawless complexion.</p>
+                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Riasan pengantin istimewa untuk
+                                Akad/Pemberkatan & Resepsi. Tahan hingga 16+ jam, bebas crack, dengan teknik flawless
+                                complexion.</p>
                             <ul class="mt-4 space-y-2 text-xs text-gray-600">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Free Trial Makeup (1x)</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Termasuk Hairdo / Hijab Do</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Softlens & Bulu Mata Premium</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Touch Up Kit Pribadi</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Free Trial Makeup (1x)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Termasuk Hairdo / Hijab Do</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Softlens & Bulu Mata Premium</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Touch Up Kit Pribadi</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#booking" class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan Paket Ini</a>
+                        <a href="#booking"
+                            class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan
+                            Paket Ini</a>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Makeup Tunangan" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="h-72 overflow-hidden">
+                            <img src="./assets/gmabar4.jpeg" alt="Makeup Tunangan"
+                                class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="font-serif text-2xl font-bold text-brand-dark">Tunangan</h3>
                             <p class="text-brand-rosegold font-semibold mt-1">Mulai Rp 850.000</p>
-                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Tampilan anggun & fresh yang menawan untuk momen lamaran atau pertunangan Anda bersama keluarga besar.</p>
+                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Tampilan anggun & fresh yang menawan
+                                untuk momen lamaran atau pertunangan Anda bersama keluarga besar.</p>
                             <ul class="mt-4 space-y-2 text-xs text-gray-600">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Rias Wajah Semi-Glam</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Termasuk Hairdo / Styling Hijab</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Bulu Mata Bawah & Atas</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Rias Wajah Semi-Glam</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Termasuk Hairdo / Styling Hijab</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Bulu Mata Bawah & Atas</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#booking" class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan Paket Ini</a>
+                        <a href="#booking"
+                            class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan
+                            Paket Ini</a>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop" alt="Makeup Wisuda" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="h-72 overflow-hidden">
+                            <img src="./assets/gambar5.jpeg" alt="Makeup Wisuda"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="font-serif text-2xl font-bold text-brand-dark">Graduation / Wisuda</h3>
                             <p class="text-brand-rosegold font-semibold mt-1">Mulai Rp 500.000</p>
-                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Riasan natural glam yang segar, awet seharian di bawah toga, dan sangat bagus saat difoto studio.</p>
+                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Riasan natural glam yang segar, awet
+                                seharian di bawah toga, dan sangat bagus saat difoto studio.</p>
                             <ul class="mt-4 space-y-2 text-xs text-gray-600">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Natural / Korean Glass Look</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Termasuk Hijab Styling / Simple Hairdo</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Tahan Keringat & Minyak</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Natural / Korean Glass Look</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Termasuk Hijab Styling / Simple Hairdo</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Tahan Keringat & Minyak</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#booking" class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan Paket Ini</a>
+                        <a href="#booking"
+                            class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan
+                            Paket Ini</a>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=800&auto=format&fit=crop" alt="Party Makeup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="h-72 overflow-hidden">
+                            <img src="./assets/gambar6.jpeg" alt="Party Makeup"
+                                class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="font-serif text-2xl font-bold text-brand-dark">Party & Event Attendee</h3>
                             <p class="text-brand-rosegold font-semibold mt-1">Mulai Rp 450.000</p>
-                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Cocok untuk hadir ke pesta pernikahan (moms/bridesmaid), prom night, atau gala dinner.</p>
+                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Cocok untuk hadir ke pesta pernikahan
+                                (moms/bridesmaid), prom night, atau gala dinner.</p>
                             <ul class="mt-4 space-y-2 text-xs text-gray-600">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Custom Look (Bold / Soft)</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Pemasangan Bulu Mata</li>
-                                <li class="flex items-center"><li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Diskon Khusus Rombongan (>3 orang)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Custom Look (Bold / Soft)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Pemasangan Bulu Mata</li>
+                                <li class="flex items-center">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Diskon Khusus Rombongan (>3 orang)</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#booking" class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan Paket Ini</a>
+                        <a href="#booking"
+                            class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan
+                            Paket Ini</a>
                     </div>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop" alt="Photoshoot Makeup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="h-72 overflow-hidden">
+                            <img src="./assets/gambar7.jpeg" alt="Photoshoot Makeup"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="font-serif text-2xl font-bold text-brand-dark">Photoshoot & Editorial</h3>
                             <p class="text-brand-rosegold font-semibold mt-1">Mulai Rp 700.000</p>
-                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Riasan spesifik untuk pemotretan catalog, maternity photoshoot, pre-wedding, atau iklan studio.</p>
+                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Riasan spesifik untuk pemotretan
+                                catalog, maternity photoshoot, pre-wedding, atau iklan studio.</p>
                             <ul class="mt-4 space-y-2 text-xs text-gray-600">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> HD Camera Friendly</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Standby Touch-up Sesuai Durasi</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Kreatif & High Concept Makeup</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> HD
+                                    Camera Friendly</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Standby Touch-up Sesuai Durasi</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Kreatif & High Concept Makeup</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#booking" class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan Paket Ini</a>
+                        <a href="#booking"
+                            class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan
+                            Paket Ini</a>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-brand-rose/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=800&auto=format&fit=crop" alt="Les Private Makeup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="h-72 overflow-hidden">
+                            <img src="./assets/gambar8.jpeg" alt="Les Private Makeup"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="font-serif text-2xl font-bold text-brand-dark">Les Private Makeup</h3>
                             <p class="text-brand-rosegold font-semibold mt-1">Mulai Rp 1.200.000</p>
-                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Belajar teknik makeup diri sendiri (Self Makeup) atau level Pro 1-on-1 bersama MUA profesional.</p>
+                            <p class="text-gray-600 text-sm mt-3 leading-relaxed">Belajar teknik makeup diri sendiri
+                                (Self Makeup) atau level Pro 1-on-1 bersama MUA profesional.</p>
                             <ul class="mt-4 space-y-2 text-xs text-gray-600">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Durasi 3-4 Jam Pertemuan</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Peralatan & Kosmetik Disediakan</li>
-                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Sertifikat Pelatihan</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Durasi 3-4 Jam Pertemuan</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Peralatan & Kosmetik Disediakan</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i>
+                                    Sertifikat Pelatihan</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#booking" class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan Paket Ini</a>
+                        <a href="#booking"
+                            class="block text-center w-full py-3 bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rosegold text-brand-dark rounded-xl font-medium transition-colors text-sm">Pesan
+                            Paket Ini</a>
                     </div>
                 </div>
 
@@ -342,72 +433,108 @@
     <section id="gallery" class="py-20 sm:py-28 bg-brand-cream/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Portofolio Karyaku</span>
+                <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Portofolio
+                    Karyaku</span>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-dark mt-2">Galeri Hasil Riasan</h2>
                 <div class="w-16 h-1 bg-brand-rosegold mx-auto mt-4 rounded-full"></div>
             </div>
 
             <!-- Category Filter Buttons -->
             <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10">
-                <button onclick="filterGallery('all')" class="filter-btn active px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-brand-rosegold text-white shadow-md">Semua Karya</button>
-                <button onclick="filterGallery('bridal')" class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Makeup Pengantin</button>
-                <button onclick="filterGallery('engagement')" class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Tunangan</button>
-                <button onclick="filterGallery('graduation')" class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Graduation / Wisuda</button>
-                <button onclick="filterGallery('party')" class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Party & Glam</button>
+                <button onclick="filterGallery('all')"
+                    class="filter-btn active px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-brand-rosegold text-white shadow-md">Semua
+                    Karya</button>
+                <button onclick="filterGallery('bridal')"
+                    class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Makeup
+                    Pengantin</button>
+                <button onclick="filterGallery('engagement')"
+                    class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Tunangan</button>
+                <button onclick="filterGallery('graduation')"
+                    class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Graduation
+                    / Wisuda</button>
+                <button onclick="filterGallery('party')"
+                    class="filter-btn px-6 py-2.5 rounded-full text-sm font-medium transition-all bg-white text-brand-charcoal hover:bg-brand-rose/40">Party
+                    & Glam</button>
             </div>
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
-                
+
                 <!-- Item 1: Bridal -->
-                <div class="gallery-item bridal group relative rounded-2xl overflow-hidden shadow-md cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200', 'Makeup Pengantin')">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Pengantin">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <div class="gallery-item bridal group relative rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                    onclick="openLightbox('./assets/gambar1.jpeg', 'Makeup Pengantin')">
+                    <img src="./assets/gambar1.jpeg"
+                        class="w-full h-71 object-cover group-hover:scale-110 transition-transform duration-500"
+                        alt="Pengantin">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                         <span class="text-xs uppercase tracking-widest text-brand-rose">Bridal</span>
                         <h4 class="font-serif text-xl font-bold">Classic Soft Glam Bridal</h4>
                     </div>
                 </div>
 
                 <!-- Item 2: Graduation -->
-                <div class="gallery-item graduation group relative rounded-2xl overflow-hidden shadow-md cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200', 'Wisuda Korean Makeup')">
-                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Wisuda">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <div class="gallery-item graduation group relative rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                    onclick="openLightbox('./assets/gambar5.jpeg', 'Wisuda Korean Makeup')">
+
+                    <img src="./assets/gambar5.jpeg"
+                        class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                        alt="Wisuda">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                         <span class="text-xs uppercase tracking-widest text-brand-rose">Wisuda</span>
                         <h4 class="font-serif text-xl font-bold">Korean Dewy Glass Skin Look</h4>
                     </div>
                 </div>
 
                 <!-- Item 3: Engagement -->
-                <div class="gallery-item engagement group relative rounded-2xl overflow-hidden shadow-md cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=1200', 'Lamaran Romantis')">
-                    <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Lamaran">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <div class="gallery-item engagement group relative rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                    onclick="openLightbox('./assets/gmabar4.jpeg', 'Lamaran Romantis')">
+                    <img src="./assets/gmabar4.jpeg"
+                        class="w-full h-71 object-cover group-hover:scale-110 transition-transform duration-500"
+                        alt="Lamaran">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                         <span class="text-xs uppercase tracking-widest text-brand-rose">Engagement</span>
                         <h4 class="font-serif text-xl font-bold">Peachy Warm Romantic Look</h4>
                     </div>
                 </div>
 
                 <!-- Item 4: Party -->
-                <div class="gallery-item party group relative rounded-2xl overflow-hidden shadow-md cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1200', 'Bold Glam Evening Look')">
-                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Party">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <div class="gallery-item party group relative rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                    onclick="openLightbox('./assets/gambar6.jpeg', 'Bold Glam Evening Look')">
+                    <img src="./assets/gambar6.jpeg"
+                        class="w-full h-71 object-cover group-hover:scale-110 transition-transform duration-500"
+                        alt="Party">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                         <span class="text-xs uppercase tracking-widest text-brand-rose">Party</span>
                         <h4 class="font-serif text-xl font-bold">Smokey Bold Glam Evening</h4>
                     </div>
                 </div>
 
                 <!-- Item 5: Bridal -->
-                <div class="gallery-item bridal group relative rounded-2xl overflow-hidden shadow-md cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200', 'Makeup Pengantin Batak')">
-                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Pengantin">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <div class="gallery-item bridal group relative rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                    onclick="openLightbox('./assets/gambar3.jpeg', 'Makeup Pengantin Batak')">
+                    <img src="./assets/gambar3.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        alt="Pengantin">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                         <span class="text-xs uppercase tracking-widest text-brand-rose">Bridal</span>
                         <h4 class="font-serif text-xl font-bold">Royal Indonesian Bridal</h4>
                     </div>
                 </div>
 
                 <!-- Item 6: Graduation -->
-                <div class="gallery-item graduation group relative rounded-2xl overflow-hidden shadow-md cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200', 'Wisuda Makeup Natural')">
-                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" alt="Wisuda">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <div class="gallery-item graduation group relative rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                    onclick="openLightbox('./assets/gambar9.jpeg', 'Wisuda Makeup Natural')">
+                    <img src="./assets/gambar9.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        alt="Wisuda">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                         <span class="text-xs uppercase tracking-widest text-brand-rose">Wisuda</span>
                         <h4 class="font-serif text-xl font-bold">Soft Rose Gold Graduation</h4>
                     </div>
@@ -419,7 +546,8 @@
 
     <!-- LIGHTBOX MODAL FOR GALLERY -->
     <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-brand-rose focus:outline-none">
+        <button onclick="closeLightbox()"
+            class="absolute top-6 right-6 text-white text-3xl hover:text-brand-rose focus:outline-none">
             <i class="fa-solid fa-xmark"></i>
         </button>
         <div class="max-w-4xl w-full text-center space-y-4">
@@ -432,22 +560,27 @@
     <section id="calculator" class="py-20 sm:py-28 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-brand-nude rounded-3xl p-6 sm:p-10 border border-brand-rose/40 shadow-xl">
-                
+
                 <div class="text-center max-w-2xl mx-auto mb-10">
-                    <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Fitur Interaktif</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-1">Kalkulator Estimasi Biaya</h2>
-                    <p class="text-gray-600 text-xs sm:text-sm mt-2">Hitung perkiraan biaya jasa makeup sesuai kebutuhan acara Anda dalam beberapa klik.</p>
+                    <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Fitur
+                        Interaktif</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-1">Kalkulator Estimasi Biaya
+                    </h2>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-2">Hitung perkiraan biaya jasa makeup sesuai kebutuhan
+                        acara Anda dalam beberapa klik.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    
+
                     <!-- Calculator Inputs -->
                     <div class="lg:col-span-7 space-y-6">
-                        
+
                         <!-- Event Type Select -->
                         <div>
-                            <label class="block text-sm font-semibold text-brand-dark mb-2">1. Pilih Jenis Event / Layanan Utama</label>
-                            <select id="calc-service" onchange="calculateTotal()" class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
+                            <label class="block text-sm font-semibold text-brand-dark mb-2">1. Pilih Jenis Event /
+                                Layanan Utama</label>
+                            <select id="calc-service" onchange="calculateTotal()"
+                                class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
                                 <option value="2500000">Bridal / Akad / Resepsi (Rp 2.500.000)</option>
                                 <option value="850000">Lamaran / Engagement (Rp 850.000)</option>
                                 <option value="500000" selected>Wisuda / Graduation (Rp 500.000)</option>
@@ -458,29 +591,41 @@
 
                         <!-- People Counter -->
                         <div>
-                            <label class="block text-sm font-semibold text-brand-dark mb-2">2. Jumlah Orang Dirias</label>
+                            <label class="block text-sm font-semibold text-brand-dark mb-2">2. Jumlah Orang
+                                Dirias</label>
                             <div class="flex items-center space-x-4">
-                                <button onclick="adjustPeople(-1)" class="w-10 h-10 rounded-xl bg-brand-rose/30 font-bold text-brand-dark hover:bg-brand-rosegold hover:text-white transition-colors">-</button>
-                                <span id="calc-people" class="font-bold text-lg text-brand-dark w-8 text-center">1</span>
-                                <button onclick="adjustPeople(1)" class="w-10 h-10 rounded-xl bg-brand-rose/30 font-bold text-brand-dark hover:bg-brand-rosegold hover:text-white transition-colors">+</button>
+                                <button onclick="adjustPeople(-1)"
+                                    class="w-10 h-10 rounded-xl bg-brand-rose/30 font-bold text-brand-dark hover:bg-brand-rosegold hover:text-white transition-colors">-</button>
+                                <span id="calc-people"
+                                    class="font-bold text-lg text-brand-dark w-8 text-center">1</span>
+                                <button onclick="adjustPeople(1)"
+                                    class="w-10 h-10 rounded-xl bg-brand-rose/30 font-bold text-brand-dark hover:bg-brand-rosegold hover:text-white transition-colors">+</button>
                                 <span class="text-xs text-gray-500">(Diskon 10% untuk >3 orang)</span>
                             </div>
                         </div>
 
                         <!-- Add-ons Checkboxes -->
                         <div>
-                            <label class="block text-sm font-semibold text-brand-dark mb-2">3. Layanan Tambahan (Add-ons)</label>
+                            <label class="block text-sm font-semibold text-brand-dark mb-2">3. Layanan Tambahan
+                                (Add-ons)</label>
                             <div class="space-y-2">
-                                <label class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-brand-rosegold">
-                                    <input type="checkbox" id="addon-touchup" value="300000" onchange="calculateTotal()" class="rounded text-brand-rosegold focus:ring-brand-rosegold">
+                                <label
+                                    class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-brand-rosegold">
+                                    <input type="checkbox" id="addon-touchup" value="300000" onchange="calculateTotal()"
+                                        class="rounded text-brand-rosegold focus:ring-brand-rosegold">
                                     <span class="text-sm text-gray-700">Standby Touch-up Sesi 2 (+ Rp 300.000)</span>
                                 </label>
-                                <label class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-brand-rosegold">
-                                    <input type="checkbox" id="addon-home" value="150000" onchange="calculateTotal()" class="rounded text-brand-rosegold focus:ring-brand-rosegold">
-                                    <span class="text-sm text-gray-700">Layanan On-Location / Home Service (+ Rp 150.000)</span>
+                                <label
+                                    class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-brand-rosegold">
+                                    <input type="checkbox" id="addon-home" value="150000" onchange="calculateTotal()"
+                                        class="rounded text-brand-rosegold focus:ring-brand-rosegold">
+                                    <span class="text-sm text-gray-700">Layanan On-Location / Home Service (+ Rp
+                                        150.000)</span>
                                 </label>
-                                <label class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-brand-rosegold">
-                                    <input type="checkbox" id="addon-softlens" value="75000" onchange="calculateTotal()" class="rounded text-brand-rosegold focus:ring-brand-rosegold">
+                                <label
+                                    class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-brand-rosegold">
+                                    <input type="checkbox" id="addon-softlens" value="75000" onchange="calculateTotal()"
+                                        class="rounded text-brand-rosegold focus:ring-brand-rosegold">
                                     <span class="text-sm text-gray-700">Softlens Premium Import (+ Rp 75.000)</span>
                                 </label>
                             </div>
@@ -489,19 +634,24 @@
                     </div>
 
                     <!-- Calculator Summary Result -->
-                    <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-brand-rose/50 shadow-md text-center flex flex-col justify-between h-full">
+                    <div
+                        class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-brand-rose/50 shadow-md text-center flex flex-col justify-between h-full">
                         <div>
-                            <span class="text-xs uppercase font-semibold text-gray-400 tracking-wider">Estimasi Biaya Total</span>
-                            <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-gold mt-2" id="calc-result">
+                            <span class="text-xs uppercase font-semibold text-gray-400 tracking-wider">Estimasi Biaya
+                                Total</span>
+                            <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-gold mt-2"
+                                id="calc-result">
                                 Rp 500.000
                             </div>
                             <p class="text-xs text-gray-500 mt-2 leading-relaxed">
-                                *Harga bersifat estimasi awal. Biaya penginapan/transport luar kota dapat disesuaikan kemudian saat reservasi.
+                                *Harga bersifat estimasi awal. Biaya penginapan/transport luar kota dapat disesuaikan
+                                kemudian saat reservasi.
                             </p>
                         </div>
 
                         <div class="mt-8">
-                            <button onclick="applyCalcToBooking()" class="w-full bg-brand-rosegold hover:bg-brand-gold text-white font-semibold py-3.5 rounded-xl shadow-md transition-colors text-sm flex items-center justify-center gap-2">
+                            <button onclick="applyCalcToBooking()"
+                                class="w-full bg-brand-rosegold hover:bg-brand-gold text-white font-semibold py-3.5 rounded-xl shadow-md transition-colors text-sm flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-arrow-down"></i> Gunakan Estimasi Ini Untuk Booking
                             </button>
                         </div>
@@ -523,19 +673,25 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
+
                 <!-- Testi 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-rose/20 relative flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-brand-rose/20 relative flex flex-col justify-between">
                     <div>
                         <div class="text-brand-gold text-sm space-x-1 mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-600 text-sm italic leading-relaxed">
-                            "Kak Winda beneran ajaib! Pas akad nikah makeupku tahan seharian dari jam 6 pagi sampe malem padahal sempet nangis haru. Tetep flawless dan ga crack sama sekali!"
+                            "Kak Winda beneran ajaib! Pas akad nikah makeupku tahan seharian dari jam 6 pagi sampe malem
+                            padahal sempet nangis haru. Tetep flawless dan ga crack sama sekali!"
                         </p>
                     </div>
                     <div class="mt-6 flex items-center gap-4 border-t border-gray-100 pt-4">
-                        <div class="w-10 h-10 rounded-full bg-brand-rose/50 font-serif font-bold text-brand-dark flex items-center justify-center">S</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-brand-rose/50 font-serif font-bold text-brand-dark flex items-center justify-center">
+                            S</div>
                         <div>
                             <h4 class="font-bold text-sm text-brand-dark">Sania Naravit</h4>
                             <span class="text-xs text-gray-400">Client Pengantin</span>
@@ -544,17 +700,23 @@
                 </div>
 
                 <!-- Testi 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-rose/20 relative flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-brand-rose/20 relative flex flex-col justify-between">
                     <div>
                         <div class="text-brand-gold text-sm space-x-1 mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-600 text-sm italic leading-relaxed">
-                            "Suka banget hasil makeup wisudaku kemarin! Natural tapi tetep keliatan pangling pas di foto studio. Hijab do-nya juga rapi banget. Makasih banyak kak Winda!"
+                            "Suka banget hasil makeup wisudaku kemarin! Natural tapi tetep keliatan pangling pas di foto
+                            studio. Hijab do-nya juga rapi banget. Makasih banyak kak Winda!"
                         </p>
                     </div>
                     <div class="mt-6 flex items-center gap-4 border-t border-gray-100 pt-4">
-                        <div class="w-10 h-10 rounded-full bg-brand-rose/50 font-serif font-bold text-brand-dark flex items-center justify-center">A</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-brand-rose/50 font-serif font-bold text-brand-dark flex items-center justify-center">
+                            A</div>
                         <div>
                             <h4 class="font-bold text-sm text-brand-dark">Galih Cahya</h4>
                             <span class="text-xs text-gray-400">Wisuda Chula</span>
@@ -563,17 +725,23 @@
                 </div>
 
                 <!-- Testi 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-rose/20 relative flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-brand-rose/20 relative flex flex-col justify-between">
                     <div>
                         <div class="text-brand-gold text-sm space-x-1 mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-600 text-sm italic leading-relaxed">
-                            "MUA paling higienis yang pernah aku temui. Brush bersih, alat-alat steril, dan produknya branded semua. Pelayanan super ramah dan tepat waktu."
+                            "MUA paling higienis yang pernah aku temui. Brush bersih, alat-alat steril, dan produknya
+                            branded semua. Pelayanan super ramah dan tepat waktu."
                         </p>
                     </div>
                     <div class="mt-6 flex items-center gap-4 border-t border-gray-100 pt-4">
-                        <div class="w-10 h-10 rounded-full bg-brand-rose/50 font-serif font-bold text-brand-dark flex items-center justify-center">V</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-brand-rose/50 font-serif font-bold text-brand-dark flex items-center justify-center">
+                            V</div>
                         <div>
                             <h4 class="font-bold text-sm text-brand-dark">Aulya</h4>
                             <span class="text-xs text-gray-400">Engagement Client</span>
@@ -589,20 +757,24 @@
     <section id="booking" class="py-20 sm:py-28 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
+
                 <!-- Contact Info Left -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Reservasi Tanggal</span>
-                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-1">Konsultasi & Booking</h2>
+                        <span class="text-brand-rosegold font-semibold text-sm tracking-widest uppercase">Reservasi
+                            Tanggal</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-1">Konsultasi & Booking
+                        </h2>
                         <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            Jadwal tanggal pernikahan dan momen penting Anda terbatas. Silakan isi formulir atau hubungi kami langsung via WhatsApp untuk amankan tanggal.
+                            Jadwal tanggal pernikahan dan momen penting Anda terbatas. Silakan isi formulir atau hubungi
+                            kami langsung via WhatsApp untuk amankan tanggal.
                         </p>
                     </div>
 
                     <div class="space-y-4 text-sm">
                         <div class="flex items-start gap-4 p-4 bg-brand-nude rounded-2xl border border-brand-rose/30">
-                            <div class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
@@ -612,7 +784,8 @@
                         </div>
 
                         <div class="flex items-start gap-4 p-4 bg-brand-nude rounded-2xl border border-brand-rose/30">
-                            <div class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center shrink-0">
                                 <i class="fa-brands fa-whatsapp text-lg"></i>
                             </div>
                             <div>
@@ -622,12 +795,14 @@
                         </div>
 
                         <div class="flex items-start gap-4 p-4 bg-brand-nude rounded-2xl border border-brand-rose/30">
-                            <div class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-full bg-brand-rosegold text-white flex items-center justify-center shrink-0">
                                 <i class="fa-regular fa-clock"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-brand-dark">Jam Operasional Studio</h4>
-                                <p class="text-gray-600 text-xs mt-0.5">Senin - Minggu: 06.00 - 18.00 WIB (Sesuai Janji)</p>
+                                <p class="text-gray-600 text-xs mt-0.5">Senin - Minggu: 06.00 - 18.00 WIB (Sesuai Janji)
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -635,9 +810,15 @@
                     <div>
                         <h4 class="font-bold text-sm text-brand-dark mb-3">Ikuti Portofolio Harian Kami:</h4>
                         <div class="flex gap-3">
-                            <a href="#" class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i class="fa-brands fa-tiktok text-lg"></i></a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube text-lg"></i></a>
+                            <a href="https://www.instagram.com/makeup_witme?mdxt=MWE5d241cXp2MHp5Mw=="
+                                class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i
+                                    class="fa-brands fa-instagram text-lg"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i
+                                    class="fa-brands fa-tiktok text-lg"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i
+                                    class="fa-brands fa-youtube text-lg"></i></a>
                         </div>
                     </div>
                 </div>
@@ -647,29 +828,42 @@
                     <form id="booking-form" onsubmit="sendToInstagram(event)" class="space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Nama Lengkap *</label>
-                                <input type="text" id="book-name" required placeholder="Contoh: Amanda Putri" class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
+                                <label
+                                    class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Nama
+                                    Lengkap *</label>
+                                <input type="text" id="book-name" required placeholder="Contoh: Amanda Putri"
+                                    class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Nama Instagram *</label>
-                                <input type="tel" id="book-phone" required placeholder="08123456789" class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
+                                <label
+                                    class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Nama
+                                    Instagram *</label>
+                                <input type="tel" id="book-phone" required placeholder="08123456789"
+                                    class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Tanggal Acara *</label>
-                                <input type="date" id="book-date" required class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none text-gray-700">
+                                <label
+                                    class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Tanggal
+                                    Acara *</label>
+                                <input type="date" id="book-date" required
+                                    class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none text-gray-700">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Jam Makeup Selesai *</label>
-                                <input type="time" id="book-time" required class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none text-gray-700">
+                                <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Jam
+                                    Makeup Selesai *</label>
+                                <input type="time" id="book-time" required
+                                    class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none text-gray-700">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Pilihan Paket Layanan *</label>
-                            <select id="book-service" class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
+                            <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Pilihan
+                                Paket Layanan *</label>
+                            <select id="book-service"
+                                class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
                                 <option value="Bridal Makeup Package">Bridal / Akad / Resepsi</option>
                                 <option value="Engagement Makeup">Lamaran / Engagement</option>
                                 <option value="Graduation Makeup">Wisuda / Graduation</option>
@@ -680,17 +874,24 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Lokasi Rias (Studio / Home Service) *</label>
-                            <input type="text" id="book-location" required placeholder="Alamat lengkap atau nama studio/hotel" class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
+                            <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Lokasi
+                                Rias (Studio / Home Service) *</label>
+                            <input type="text" id="book-location" required
+                                placeholder="Alamat lengkap atau nama studio/hotel"
+                                class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Catatan Tambahan / Request Khusus</label>
-                            <textarea id="book-notes" rows="3" placeholder="Contoh: Tambah makeup untuk 2 ibu pengantin, preferensi tone makeup..." class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none"></textarea>
+                            <label class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Catatan
+                                Tambahan / Request Khusus</label>
+                            <textarea id="book-notes" rows="3"
+                                placeholder="Contoh: Tambah makeup untuk 2 ibu pengantin, preferensi tone makeup..."
+                                class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 text-base">
-                            <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Form via Instagram
+                        <button type="submit"
+                            class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Form via Wa
                         </button>
                     </form>
                 </div>
@@ -703,15 +904,17 @@
     <footer class="bg-brand-dark text-white pt-16 pb-8 border-t border-brand-rose/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
-                
+
                 <!-- Brand Info -->
                 <div class="space-y-4 md:col-span-2">
                     <div class="flex items-center gap-2">
-                        <span class="w-8 h-8 rounded-full bg-brand-rosegold text-white flex items-center justify-center font-serif text-lg font-bold">GG</span>
+                        <span
+                            class="w-8 h-8 rounded-full bg-brand-rosegold text-white flex items-center justify-center font-serif text-lg font-bold">GG</span>
                         <span class="font-serif text-2xl font-bold tracking-wider text-white">MAKEUP WITME</span>
                     </div>
                     <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
-                        Studio Makeup Artist Profesional dengan komitmen menghadirkan riasan anggun, elegan, dan tahan lama di setiap momen paling berharga dalam hidup Anda.
+                        Studio Makeup Artist Profesional dengan komitmen menghadirkan riasan anggun, elegan, dan tahan
+                        lama di setiap momen paling berharga dalam hidup Anda.
                     </p>
                 </div>
 
@@ -720,9 +923,12 @@
                     <h4 class="font-serif text-lg font-bold text-brand-rose mb-4">Navigasi Ringkas</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
                         <li><a href="#about" class="hover:text-brand-rosegold transition-colors">Tentang MUA</a></li>
-                        <li><a href="#services" class="hover:text-brand-rosegold transition-colors">Paket Layanan</a></li>
-                        <li><a href="#gallery" class="hover:text-brand-rosegold transition-colors">Portofolio Galeri</a></li>
-                        <li><a href="#calculator" class="hover:text-brand-rosegold transition-colors">Kalkulator Biaya</a></li>
+                        <li><a href="#services" class="hover:text-brand-rosegold transition-colors">Paket Layanan</a>
+                        </li>
+                        <li><a href="#gallery" class="hover:text-brand-rosegold transition-colors">Portofolio Galeri</a>
+                        </li>
+                        <li><a href="#calculator" class="hover:text-brand-rosegold transition-colors">Kalkulator
+                                Biaya</a></li>
                     </ul>
                 </div>
 
@@ -808,7 +1014,7 @@
 
         function calculateTotal() {
             const baseServicePrice = parseInt(document.getElementById('calc-service').value) || 0;
-            
+
             // Addon values
             let addonTotal = 0;
             if (document.getElementById('addon-touchup').checked) addonTotal += parseInt(document.getElementById('addon-touchup').value);
@@ -830,7 +1036,7 @@
         function applyCalcToBooking() {
             const serviceSelect = document.getElementById('calc-service');
             const selectedText = serviceSelect.options[serviceSelect.selectedIndex].text;
-            
+
             // Auto select matching item in booking form
             const bookingSelect = document.getElementById('book-service');
             if (selectedText.includes('Bridal')) bookingSelect.value = 'Bridal Makeup Package';
@@ -850,7 +1056,7 @@
         // WhatsApp Booking Form Integration
         function sendToWhatsApp(e) {
             e.preventDefault();
-            
+
             const name = document.getElementById('book-name').value;
             const phone = document.getElementById('book-phone').value;
             const date = document.getElementById('book-date').value;
@@ -875,9 +1081,10 @@
         }
 
         // Run calculator on page load
-        window.onload = function() {
+        window.onload = function () {
             calculateTotal();
         };
     </script>
 </body>
+
 </html>
