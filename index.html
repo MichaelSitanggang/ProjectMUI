@@ -813,19 +813,14 @@
                             <a href="https://www.instagram.com/makeup_witme?mdxt=MWE5d241cXp2MHp5Mw=="
                                 class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i
                                     class="fa-brands fa-instagram text-lg"></i></a>
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i
-                                    class="fa-brands fa-tiktok text-lg"></i></a>
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-brand-nude hover:bg-brand-rosegold hover:text-white border border-brand-rose text-brand-dark flex items-center justify-center transition-colors"><i
-                                    class="fa-brands fa-youtube text-lg"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Booking Form Right -->
                 <div class="lg:col-span-7 bg-brand-nude p-6 sm:p-10 rounded-3xl border border-brand-rose/40 shadow-lg">
-                    <form id="booking-form" onsubmit="sendToInstagram(event)" class="space-y-4">
+                <form id="booking-form" onsubmit="sendToWhatsApp(event)"class="space-y-4">
+
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label
@@ -836,8 +831,8 @@
                             </div>
                             <div>
                                 <label
-                                    class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Nama
-                                    Instagram *</label>
+                                    class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-1">Nomor
+                                    WhatsApp*</label>
                                 <input type="tel" id="book-phone" required placeholder="08123456789"
                                     class="w-full bg-white border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-rosegold focus:outline-none">
                             </div>
@@ -1053,32 +1048,43 @@
             document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // WhatsApp Booking Form Integration
         function sendToWhatsApp(e) {
             e.preventDefault();
 
-            const name = document.getElementById('book-name').value;
-            const phone = document.getElementById('book-phone').value;
+            const name = document.getElementById('book-name').value.trim();
+            const phone = document.getElementById('book-phone').value.trim();
             const date = document.getElementById('book-date').value;
             const time = document.getElementById('book-time').value;
             const service = document.getElementById('book-service').value;
-            const location = document.getElementById('book-location').value;
-            const notes = document.getElementById('book-notes').value;
+            const location = document.getElementById('book-location').value.trim();
+            const notes = document.getElementById('book-notes').value.trim();
 
-            const adminPhoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp asli MUA
+            // Ganti dengan nomor WhatsApp asli pemilik MUA
+            const adminPhoneNumber = "6281228183724"
+            const message = `
+Halo MAKEUP WITME! Saya ingin melakukan reservasi makeup.
 
-            const message = `Halo MAKEUP WITME, saya ingin konsultasi / reservasi jadwal makeup dengan detail berikut:%0A%0A` +
-                `*Nama:* ${encodeURIComponent(name)}%0A` +
-                `*No. WhatsApp:* ${encodeURIComponent(phone)}%0A` +
-                `*Tanggal Acara:* ${encodeURIComponent(date)}%0A` +
-                `*Jam Selesai:* ${encodeURIComponent(time)} WIB%0A` +
-                `*Paket Layanan:* ${encodeURIComponent(service)}%0A` +
-                `*Lokasi:* ${encodeURIComponent(location)}%0A` +
-                `*Catatan:* ${encodeURIComponent(notes || '-')}%0A%0A` +
-                `Apakah tanggal tersebut masih tersedia? Terima kasih!`;
+*DETAIL RESERVASI*
 
-            window.open(`https://wa.me/${adminPhoneNumber}?text=${message}`, '_blank');
+Nama: ${name}
+Nomor WhatsApp: ${phone}
+Tanggal Acara: ${date}
+Jam Makeup Selesai: ${time} WIB
+Paket Layanan: ${service}
+Lokasi Rias: ${location}
+Catatan Tambahan: ${notes || '-'}
+
+Apakah tanggal tersebut masih tersedia?
+
+Terima kasih!
+    `;
+
+            const whatsappURL =
+                `https://wa.me/${adminPhoneNumber}?text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappURL, '_blank');
         }
+
 
         // Run calculator on page load
         window.onload = function () {
